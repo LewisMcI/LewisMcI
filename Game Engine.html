@@ -174,6 +174,7 @@
             <li><a href="https://www.linkedin.com/in/lewis-mcintyre-136882296/" class="text-white">LinkedIn</a></li>
             <li><a href="https://github.com/LewisMcI" class="text-white">GitHub</a></li>
             <li><a href="mailto:lewismcintyre@hotmail.com?" class="text-white">Email</a></li>
+            <li><a href="https://www.artstation.com/lewis582" class="text-white">ArtStation</a></li>
 
           </ul>
         </div>
@@ -197,63 +198,102 @@
 
   <section class="py-5 text-center container">
     <div class="row py-lg-2">
-      <h1 class="fw-light">Freaked Out</h1>
-      <p class="lead text-body-secondary">June 1, 2023</p></div>
+      <h1 class="fw-light">C++ Game Engine</h1>
+      <p class="lead text-body-secondary">January 21st, 2024</p></div>
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/-TT5uQZrLR8?si=IdB_RRlUssE9jMfo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+      
+      <br>Links: <a href="https://github.com/LewisMcI/Games-Programming-3">GitHub</a>
   </section>
 
+  <hr>
   <section class="text-left container">
-    <div class="row py-lg-3">
-      <h1 class="fw-light">Description</h1>
-      <p>This blog post shows a few different types of content that’s supported and styled with Bootstrap. Basic typography, lists, tables, images, code, and more are all supported as expected.</p>
-    <hr>
-    <p>This is some additional paragraph placeholder content. It has been written to fill the available space and show how a longer snippet of text affects the surrounding content. We'll repeat it often to keep the demonstration flowing, so be on the lookout for this exact same string of text.</p>
-    <h2>Blockquotes</h2>
-    <p>This is an example blockquote in action:</p>
-    <blockquote class="blockquote">
-      <p>Quoted text goes here.</p>
-    </blockquote>
-    <p>This is some additional paragraph placeholder content. It has been written to fill the available space and show how a longer snippet of text affects the surrounding content. We'll repeat it often to keep the demonstration flowing, so be on the lookout for this exact same string of text.</p>
-    <h3>Example lists</h3>
-    <p>This is some additional paragraph placeholder content. It's a slightly shorter version of the other highly repetitive body text used throughout. This is an example unordered list:</p>
-    <ul>
-      <li>First list item</li>
-      <li>Second list item with a longer description</li>
-      <li>Third list item to close it out</li>
-    </ul>
-    <p>And this is an ordered list:</p>
-    <ol>
-      <li>First list item</li>
-      <li>Second list item with a longer description</li>
-      <li>Third list item to close it out</li>
-    </ol>
-    <p>And this is a definition list:</p>
-    <dl>
-      <dt>HyperText Markup Language (HTML)</dt>
-      <dd>The language used to describe and define the content of a Web page</dd>
-      <dt>Cascading Style Sheets (CSS)</dt>
-      <dd>Used to describe the appearance of Web content</dd>
-      <dt>JavaScript (JS)</dt>
-      <dd>The programming language used to build advanced Web sites and applications</dd>
-    </dl>
-    <h2>Inline HTML elements</h2>
-    <p>HTML defines a long list of available inline tags, a complete list of which can be found on the <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element">Mozilla Developer Network</a>.</p>
-    <ul>
-      <li><strong>To bold text</strong>, use <code class="language-plaintext highlighter-rouge">&lt;strong&gt;</code>.</li>
-      <li><em>To italicize text</em>, use <code class="language-plaintext highlighter-rouge">&lt;em&gt;</code>.</li>
-      <li>Abbreviations, like <abbr title="HyperText Markup Language">HTML</abbr> should use <code class="language-plaintext highlighter-rouge">&lt;abbr&gt;</code>, with an optional <code class="language-plaintext highlighter-rouge">title</code> attribute for the full phrase.</li>
-      <li>Citations, like <cite>— Mark Otto</cite>, should use <code class="language-plaintext highlighter-rouge">&lt;cite&gt;</code>.</li>
-      <li><del>Deleted</del> text should use <code class="language-plaintext highlighter-rouge">&lt;del&gt;</code> and <ins>inserted</ins> text should use <code class="language-plaintext highlighter-rouge">&lt;ins&gt;</code>.</li>
-      <li>Superscript <sup>text</sup> uses <code class="language-plaintext highlighter-rouge">&lt;sup&gt;</code> and subscript <sub>text</sub> uses <code class="language-plaintext highlighter-rouge">&lt;sub&gt;</code>.</li>
-    </ul>
-    <p>Most of these elements are styled by browsers with few modifications on our part.</p>
-    <h2>Heading</h2>
-    <p>This is some additional paragraph placeholder content. It has been written to fill the available space and show how a longer snippet of text affects the surrounding content. We'll repeat it often to keep the demonstration flowing, so be on the lookout for this exact same string of text.</p>
-    <h3>Sub-heading</h3>
-    <p>This is some additional paragraph placeholder content. It has been written to fill the available space and show how a longer snippet of text affects the surrounding content. We'll repeat it often to keep the demonstration flowing, so be on the lookout for this exact same string of text.</p>
-    <pre><code>Example code block</code></pre>
-    <p>This is some additional paragraph placeholder content. It's a slightly shorter version of the other highly repetitive body text used throughout.</p>    
-  </section>
+    <div class="row">
+      <h1 class="py-lg-3 fw-light">Description</h1>
+      <p>This is a Game Engine built entiriely in C++ using SDL and ECS. It handles Display Creation and Mesh Reading/Drawing with
+        Materials and Shaders. It offers a Double Buffer, a Frame Buffer Object and a multitude of shaders.
+      </p>
+    
+    </div>
 
+    <div class="row py-lg-3">
+    
+      <h1 class="py-lg-3 fw-light">Features</h1>
+      <ul style="list-style-position: inside; padding-left: 20px;">
+      <li>Entity Component System</li>
+      <li>ASSIMP Model Loading</li>
+      <li>Model Binary Optimisation</li>
+      <li>Frame Buffer Object (Kuwahara Filter)</li>
+      <li>SFINAE Test which auto-subscribes components with onUpdate method to EventSystem</li>
+      <li>Global Variables</li>
+      <li>Quaternion Transform</li>
+      <li>Timestep Management</li>
+      <li>Data Structures such as Singleton and EventSystem</li>
+    </ul>
+  </div>
+    
+    <h1 class="fw-light">Showcase</h1>
+    <div id="myCarousel" class="carousel slide mb-6" data-bs-ride="carousel">
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="3" aria-label="Slide 4"></button>
+      </div>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <div style="width: 100%; height: 400px; overflow: hidden;">
+            <img src="images/Game-Engine/Chromatic-Abberation.jpg" style="width: 100%; height: 100%; object-fit: cover;" alt="Freaked Out Image" />
+        </div>
+          <div class="container">
+            <div class="carousel-caption text-start">
+              <h1>Chromatic-Abberation</h1>
+            </div>
+          </div>
+        </div>
+
+          <div class="carousel-item">
+            <div style="width: 100%; height: 400px; overflow: hidden;">
+              <img src="images/Game-Engine/Asteroids.png" style="width: 100%; height: 100%; object-fit: cover;" alt="Example Image" />
+          </div>
+            <div class="container">
+              <div class="carousel-caption text-start">
+                <h1>Asteroids-Gameplay</h1>
+              </div>
+            </div>
+          </div>
+
+          <div class="carousel-item">
+            <div style="width: 100%; height: 400px; overflow: hidden;">
+              <img src="images/Game-Engine/Explosion-Shader-Environment-Mapping.jpg" style="width: 100%; height: 100%; object-fit: cover;" alt="Example Image" />
+          </div>
+            <div class="container">
+              <div class="carousel-caption text-start">
+                <h1>Explosion-Shader-Environment-Mapping</h1>
+              </div>
+            </div>
+          </div>
+
+          <div class="carousel-item">
+            <div style="width: 100%; height: 400px; overflow: hidden;">
+              <img src="images/Game-Engine/Kuwahara-Filter.jpg" style="width: 100%; height: 100%; object-fit: cover;" alt="Example Image" />
+          </div>
+            <div class="container">
+              <div class="carousel-caption text-start">
+                <h1>Kuwahara-Filter</h1>
+              </div>
+            </div>
+          </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#myCarousel" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#myCarousel" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>    
+  </section>
 </main>
 
 <footer class="text-body-secondary py-5">

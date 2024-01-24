@@ -198,38 +198,42 @@
 
   <section class="py-5 text-center container">
     <div class="row py-lg-2">
-      <h1 class="fw-light">Freaked Out</h1>
-      <p class="lead text-body-secondary">June 1st, 2023</p></div>
-      <iframe width="560" height="315" src="https://www.youtube.com/embed/6faTMmqzHLs?si=ZTlkUKLYRlTD38h0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+      <h1 class="fw-light">Road Network Generator</h1>
+      <p class="lead text-body-secondary">December 23rd, 2022</p></div>
+      <img src="images/Road-Network-Generator/Highway-vs-City.jpg" style="width: 50%; height: 315px; object-fit: cover;" alt="Road Network Generator Image" />
 
-      <br>Links: <a href="https://gcugames.itch.io/freaked-out">Itch.io</a>
   </section>
 
   <hr>
   <section class="text-left container">
     <div class="row">
       <h1 class="py-lg-3 fw-light">Description</h1>
-      <p>Freaked Out is a Singleplayer, Comedic, First person Simulation and Sandbox game. It centers around a character trapped in a room
-        by their alter-ego, forced to fight through deadly traps which gets significantly more devious as the days go by.</p>
+      <p>Created in Unity, this generator uses L-Systems to simulate differing Road Networks. We simulate type A and B roads as defined 
+        by the Department of Transport in the UK. We do this by using separate rulesets starting with the initial axiom. 
+      </p>
     </div>
-
     <div class="row">
-      <p>This game was created following the prompt '<i>Dumb Ways to Die</i>'.
+      <h2 class="py-lg-3 fw-light">Rulesets Used</h2>
+      <p>
+        Type A: F+F[F]
+        <br>
+        Type B Ruleset: F[+F][-FF]
+        <br><br>
+        Where:
+        <br>
+        F - Forward, [ - Save Position, ] - Revert to position, - - Left, + - Right
       </p>
     </div>
 
+
     <div class="row py-lg-3">
     
-    <h1 class="py-lg-3 fw-light">My Contribution</h1>
+      <h1 class="py-lg-3 fw-light">Features</h1>
       <ul style="list-style-position: inside; padding-left: 20px;">
-      <li>Unity & GitHub Management</li>
-      <li>AI FSM with NavMesh Pathfinding, Procedural Animation & Line of Sight mesh creator</li>
-      <li>Custom UI System using Delegates</li>
-      <li>Dialogue System</li>
-      <li>Task Generation</li>
-      <li>Dynamic Camera System</li>
-      <li>Stylized VFX Creation</li>
-      <li>Misc (Including major debugging & QoL adjustments)</li>
+      <li>Parametric</li>
+      <li>Type A & B Road Rulesets</li>
+      <li>Road Optimisation (Remove impossible road placement)</li>
+      <li>Path Optimisation (Paths chance of ending increases with each direction change)</li>
     </ul>
   </div>
     
@@ -239,64 +243,41 @@
         <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
         <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
         <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
-        <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="3" aria-label="Slide 4"></button>
-        <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="4" aria-label="Slide 5"></button>
       </div>
       <div class="carousel-inner">
         <div class="carousel-item active">
           <div style="width: 100%; height: 400px; overflow: hidden;">
-            <img src="images/Freaked-Out/Nuke-VFX.png" style="width: 100%; height: 100%; object-fit: cover;" alt="Freaked Out Image" />
+            <img src="images/Road-Network-Generator/Starting-Idea.png" style="width: 100%; height: 100%; object-fit: cover;" alt="Example Image" />
         </div>
           <div class="container">
             <div class="carousel-caption text-start">
-              <h1>Nuke-VFX</h1>
+              <h1>Starting-Idea</h1>
             </div>
           </div>
         </div>
 
           <div class="carousel-item">
             <div style="width: 100%; height: 400px; overflow: hidden;">
-              <img src="images/Freaked-Out/Procedural-Line-of-Sight-Mesh.png" style="width: 100%; height: 100%; object-fit: cover;" alt="Freaked Out Image" />
+              <img src="images/Road-Network-Generator/Pattern.png" style="width: 100%; height: 100%; object-fit: cover;" alt="Example Image" />
           </div>
             <div class="container">
               <div class="carousel-caption text-start">
-                <h1>Procedural-Line-of-Sight</h1>
+                <h1>Unique Pattern</h1>
               </div>
             </div>
           </div>
 
           <div class="carousel-item">
             <div style="width: 100%; height: 400px; overflow: hidden;">
-              <img src="images/Freaked-Out/Task-Generation.png" style="width: 100%; height: 100%; object-fit: cover;" alt="Freaked Out Image" />
+              <img src="images/Road-Network-Generator/Highway-vs-City.jpg" style="width: 100%; height: 100%; object-fit: cover;" alt="Example Image" />
           </div>
             <div class="container">
               <div class="carousel-caption text-start">
-                <h1>Task-Generation</h1>
+                <h1>Highway-vs-City</h1>
               </div>
             </div>
           </div>
 
-          <div class="carousel-item">
-            <div style="width: 100%; height: 400px; overflow: hidden;">
-              <img src="images/Freaked-Out/Fire-VFX.png" style="width: 100%; height: 100%; object-fit: cover;" alt="Freaked Out Image" />
-          </div>
-            <div class="container">
-              <div class="carousel-caption text-start">
-                <h1>Fire-VFX</h1>
-              </div>
-            </div>
-          </div>
-
-          <div class="carousel-item">
-            <div style="width: 100%; height: 400px; overflow: hidden;">
-              <img src="images/Freaked-Out/AI-In-Test-Scene.png" style="width: 100%; height: 100%; object-fit: cover;" alt="Freaked Out Image" />
-          </div>
-            <div class="container">
-              <div class="carousel-caption text-start">
-                <h1>AI-within-Test-Scene</h1>
-              </div>
-            </div>
-          </div>
       </div>
       <button class="carousel-control-prev" type="button" data-bs-target="#myCarousel" data-bs-slide="prev">
         <span class="carousel-control-prev-icon" aria-hidden="true"></span>
@@ -308,7 +289,6 @@
       </button>
     </div>    
   </section>
-
 </main>
 
 <footer class="text-body-secondary py-5">
