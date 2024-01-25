@@ -7,7 +7,7 @@
     <meta name="description" content="">
     <meta name="author" content="Lewis McIntyre, Mark Otto, Jacob Thornton, and Bootstrap contributors">
 
-    <title>Lewis McIntyre · Freaked Out</title>
+    <title>Lewis McIntyre · Road Network Generator</title>
 	
     <link rel="canonical" href="https://getbootstrap.com/docs/5.3/examples/album/">
 
@@ -200,8 +200,8 @@
     <div class="row py-lg-2">
       <h1 class="fw-light">Road Network Generator</h1>
       <p class="lead text-body-secondary">December 23rd, 2022</p></div>
-      <img src="images/Road-Network-Generator/Highway-vs-City.jpg" style="width: 50%; height: 315px; object-fit: cover;" alt="Road Network Generator Image" />
-
+      <img src="images/pic03.jpg" style="width: 50%; height: 315px; object-fit: cover;" alt="Road Network Generator Image" />
+      <br>Links: <a href="https://github.com/LewisMcI/Road-Network-Generator">GitHub</a>
   </section>
 
   <hr>
@@ -215,9 +215,13 @@
     <div class="row">
       <h2 class="py-lg-3 fw-light">Rulesets Used</h2>
       <p>
-        Type A: F+F[F]
+        Type A: F = F+F[F]
         <br>
-        Type B Ruleset: F[+F][-FF]
+        Axiom: [F][-F][--F]
+        <br><br>
+        Type B Ruleset: F = F[+F][-FF]
+        <br>
+        Axiom: [FF][+FF][--FF][++FF]
         <br><br>
         Where:
         <br>
@@ -243,6 +247,7 @@
         <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
         <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
         <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="3" aria-label="Slide 4"></button>
       </div>
       <div class="carousel-inner">
         <div class="carousel-item active">
@@ -256,24 +261,35 @@
           </div>
         </div>
 
-          <div class="carousel-item">
-            <div style="width: 100%; height: 400px; overflow: hidden;">
-              <img src="images/Road-Network-Generator/Pattern.png" style="width: 100%; height: 100%; object-fit: cover;" alt="Example Image" />
-          </div>
-            <div class="container">
-              <div class="carousel-caption text-start">
-                <h1>Unique Pattern</h1>
-              </div>
+        <div class="carousel-item">
+          <div style="width: 100%; height: 400px; overflow: hidden;">
+            <img src="images/Road-Network-Generator/Pattern.png" style="width: 100%; height: 100%; object-fit: cover;" alt="Example Image" />
+        </div>
+          <div class="container">
+            <div class="carousel-caption text-start">
+              <h1>Unique Pattern</h1>
             </div>
           </div>
+        </div>
+
+        <div class="carousel-item">
+          <div style="width: 100%; height: 400px; overflow: hidden;">
+            <img src="images/Road-Network-Generator/Close-Up.png" style="width: 100%; height: 100%; object-fit: cover;" alt="Example Image" />
+        </div>
+          <div class="container">
+            <div class="carousel-caption text-start">
+              <h1>Close-Up</h1>
+            </div>
+          </div>
+        </div>
 
           <div class="carousel-item">
             <div style="width: 100%; height: 400px; overflow: hidden;">
-              <img src="images/Road-Network-Generator/Highway-vs-City.jpg" style="width: 100%; height: 100%; object-fit: cover;" alt="Example Image" />
+              <img src="images/Road-Network-Generator/Highway-to-City.png" style="width: 100%; height: 100%; object-fit: cover;" alt="Example Image" />
           </div>
             <div class="container">
               <div class="carousel-caption text-start">
-                <h1>Highway-vs-City</h1>
+                <h1>Highway-to-City</h1>
               </div>
             </div>
           </div>

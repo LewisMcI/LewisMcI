@@ -7,7 +7,7 @@
     <meta name="description" content="">
     <meta name="author" content="Lewis McIntyre, Mark Otto, Jacob Thornton, and Bootstrap contributors">
 
-    <title>Lewis McIntyre · Freaked Out</title>
+    <title>Lewis McIntyre · Game Engine</title>
 	
     <link rel="canonical" href="https://getbootstrap.com/docs/5.3/examples/album/">
 
@@ -209,10 +209,15 @@
   <section class="text-left container">
     <div class="row">
       <h1 class="py-lg-3 fw-light">Description</h1>
-      <p>This is a Game Engine built entiriely in C++ using SDL and ECS. It handles Display Creation and Mesh Reading/Drawing with
-        Materials and Shaders. It offers a Double Buffer, a Frame Buffer Object and a multitude of shaders.
+      <p>This is a Game Engine built using the Entity Component System (ECS), entiriely in C++ using SDL. It handles 
+        Display Creation and Mesh Reading/Drawing with Materials and Shaders. 
       </p>
-    
+    </div>
+
+    <div class="row">
+      <p>The majority of my time spent on this project has been put into game optimisation to ensure the lowest compile time and best
+        runtime performance. As such, the game does not offer much in terms of visuals. This project is currently in development.
+      </p>
     </div>
 
     <div class="row py-lg-3">
@@ -223,14 +228,26 @@
       <li>ASSIMP Model Loading</li>
       <li>Model Binary Optimisation</li>
       <li>Frame Buffer Object (Kuwahara Filter)</li>
-      <li>SFINAE Test which auto-subscribes components with onUpdate method to EventSystem</li>
+      <li>Double Buffering</li>
+      <li>3D AABB Collision Detection</li>
+      <li>SFINAE Test to auto-subscribes onUpdate method to EventSystem</li>
       <li>Global Variables</li>
       <li>Quaternion Transform</li>
       <li>Timestep Management</li>
       <li>Data Structures such as Singleton and EventSystem</li>
     </ul>
   </div>
-    
+
+  <div class="py-3 row">
+    <h1 class="py-lg-3 fw-light">Next Steps</h1>
+    <ul style="list-style-position: inside; padding-left: 20px;">
+      <li>Final Code Optimisztion</li>
+      <li>Optimized Collision Detection</li>
+      <li>Visuals (Lighting & Better Shader Management)</li>
+      <li>Multi-Scene Support</li>
+    </ul>
+  </div>
+
     <h1 class="fw-light">Showcase</h1>
     <div id="myCarousel" class="carousel slide mb-6" data-bs-ride="carousel">
       <div class="carousel-indicators">
@@ -238,6 +255,9 @@
         <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
         <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
         <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="3" aria-label="Slide 4"></button>
+        <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="4" aria-label="Slide 5"></button>
+        <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="5" aria-label="Slide 6"></button>
+
       </div>
       <div class="carousel-inner">
         <div class="carousel-item active">
@@ -247,6 +267,17 @@
           <div class="container">
             <div class="carousel-caption text-start">
               <h1>Chromatic-Abberation</h1>
+            </div>
+          </div>
+        </div>
+
+        <div class="carousel-item">
+          <div style="width: 100%; height: 400px; overflow: hidden;">
+            <img src="images/Game-Engine/Free-Cam.png" style="width: 100%; height: 100%; object-fit: cover;" alt="Example Image" />
+        </div>
+          <div class="container">
+            <div class="carousel-caption text-start">
+              <h1>Free-Cam</h1>
             </div>
           </div>
         </div>
@@ -280,6 +311,17 @@
             <div class="container">
               <div class="carousel-caption text-start">
                 <h1>Kuwahara-Filter</h1>
+              </div>
+            </div>
+          </div>
+
+          <div class="carousel-item">
+            <div style="width: 100%; height: 400px; overflow: hidden;">
+              <img src="images/Game-Engine/Early-Development-Toon-Shading.jpg" style="width: 100%; height: 100%; object-fit: cover;" alt="Example Image" />
+          </div>
+            <div class="container">
+              <div class="carousel-caption text-start">
+                <h1>Early-Development-Toon-Shading</h1>
               </div>
             </div>
           </div>
