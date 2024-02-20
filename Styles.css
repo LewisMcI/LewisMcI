@@ -1,0 +1,7 @@
+/* Global styles */
+hr {
+  border: none;
+  height: 2px;
+  background-color: #524e4e; /* Bootstrap bg-light */
+  margin: 1rem 0; /* Adjust margin as needed */
+}
