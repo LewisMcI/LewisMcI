@@ -5,3 +5,14 @@ hr {
   background-color: #524e4e; /* Bootstrap bg-light */
   margin: 1rem 0; /* Adjust margin as needed */
 }
+.code-button {
+  border: 1px solid #ccc;
+  background-color: #f8f9fa;
+  color: #333;
+  font-family: Consolas, Monaco, 'Andale Mono', 'Ubuntu Mono', monospace;
+  padding: 6px 10px;
+  cursor: pointer;
+}
+.code-button:hover {
+  background-color: #e9ecef;
+}
