@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>All Work - Lewis McIntyre</title>
+
+    <!--Custom CSS-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+
+    <link href="https://cdn.jsdelivr.net/npm/@docsearch/css@3" rel="stylesheet">
+    <link href="../assets/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="../Styles.css" rel="stylesheet">
+
+</head>
+
+<body>
+
+    <!-- Navbar -->
+    <section id="navbar" class="">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <a class="navbar-brand" href="../index.html">Lewis McIntyre</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="/index.html">Home</a>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link" href="/all-work.html">All Work</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/blog.html">Blog</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/index.html#contact">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </section>
+
+    <!--Page Content-->
+    <section id="content" class="">
+        <div class="container">
+            <div class="row justify-content-center align-items-center">
+                <div class="col-md-0">
+                    <!-- Introduction -->
+                    <section id="introduction" class="py-0 text-center">
+                        <!--Title-->
+                        <div class="container">
+                            <div class="py-lg-2">
+                                <h1 class="fw-light">Portal</h1>
+                                <p class="lead text-body-secondary">March 23rd, 2024</p>
+                            </div>
+                            <div class="embed-responsive embed-responsive-16by9 mx-auto"
+                                style="max-width: 560px; max-height: 315;">
+                                <iframe class="embed-responsive-item" width="560" height="315"
+                                    src="https://www.youtube.com/embed/jVHQs_EekC0" title="YouTube video player"
+                                    frameborder="0"
+                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                    allowfullscreen></iframe>
+                            </div>
+                            <br>Links: <a href="https://lewismci.itch.io/portals-puzzle">Itch.io</a>
+                        </div>
+
+                        <br>
+
+                        <!--Navigation-->
+                        <h4 class="text-center">Quick Navigation</h4>
+                        <div class="d-flex flex-column justify-content-center align-items-center">
+                            <div class="btn-group">
+                                <button type="button" style="margin-right:5px;"
+                                    class="btn btn-outline-primary btn-sm mb-3"
+                                    onclick="scrollToSection('description')">Description</button>
+                                <button type="button" style="margin-right:5px;"
+                                    class="btn btn-outline-primary btn-sm mb-3"
+                                    onclick="scrollToSection('showcase')">Showcase</button>
+                            </div>
+                        </div>
+                    </section>
+
+                    <hr>
+
+                    <!--Description-->
+                    <section id="description">
+                        <div class="container">
+                            <div class="row py-lg-2">
+                                <h1 class="fw-light">Description</h1>
+                                <p class="lead text-body-secondary"> This is a simple mechanic showcase of a Portal. The
+                                    player enters through one side and exits the portal smoothly. A key component of
+                                    this project has been user experience, specifically the smooth transition from one
+                                    side of the portal to the other.
+                                </p>
+                            </div>
+                        </div>
+                    </section>
+
+                    <br>
+                    <section id="showcase">
+                        <h1 class="fw-light">Showcase</h1>
+                        <div class="container">
+                            <div class="row py-lg-2">
+                                <div id="myCarousel" class="carousel slide mb-6" data-ride="carousel">
+                                    <ol class="carousel-indicators">
+                                        <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                                        <li data-target="#myCarousel" data-slide-to="1"></li>
+                                        <li data-target="#myCarousel" data-slide-to="2"></li>
+                                    </ol>
+                                    <div class="carousel-inner" style="overflow: hidden;">
+                                        <div class="carousel-item active">
+                                            <a href="/images/Portal/VFX.png">
+                                                <img src="/images/Portal/VFX.png"
+                                                    style="width: 100%; height: 100%; object-fit: cover;" />
+                                            </a>
+                                            <div class="carousel-caption text-start">
+                                                <h1>Portal VFX</h1>
+                                            </div>
+                                        </div>
+                                        <div class="carousel-item">
+                                            <a href="/images/Portal/End-Level.png">
+                                                <img src="/images/Portal/End-Level.png"
+                                                    style="width: 100%; height: 100%; object-fit: cover;" />
+                                            </a>
+                                            <div class="carousel-caption text-start">
+                                                <h1>End Level</h1>
+                                            </div>
+                                        </div>
+                                        <div class="carousel-item">
+                                            <a href="/images/Portal/Starting.png">
+                                                <img src="/images/Portal/Starting.png"
+                                                    style="width: 100%; height: 100%; object-fit: cover;" />
+                                            </a>
+                                            <div class="carousel-caption text-start">
+                                                <h1>Level Design</h1>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <a class="carousel-control-prev" href="#myCarousel" role="button" data-slide="prev">
+                                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                        <span class="sr-only">Previous</span>
+                                    </a>
+                                    <a class="carousel-control-next" href="#myCarousel" role="button" data-slide="next">
+                                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                        <span class="sr-only">Next</span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <br>
+
+  
+
+
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white text-center py-3">
+        <div class="container">
+            <p>&copy; 2024 Lewis McIntyre · Portfolio. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS and jQuery (optional) -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+    <script>
+        function scrollToSection(sectionId) {
+            var section = document.getElementById(sectionId);
+            if (section) {
+                section.scrollIntoView({ behavior: "smooth", block: "start" });
+            }
+        }
+    </script>
+
+</body>
+
+</html>
