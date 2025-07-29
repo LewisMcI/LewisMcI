@@ -1,11 +1,51 @@
-/* Global styles */
+/* Light Mode Colours */
+:root {
+  --bg-color: #ffffff;
+  --bg-contrast-color: #f8f9fa;
+  --text-color: #333333;
+  --card-bg: #f8f9fa;
+  --nav-bg: #f8f9fa;
+}
+
+/* Dark Mode Colours */
+.dark-mode {
+  --bg-color: #121212;
+  --bg-contrast-color: #181818;
+  --text-color: #e0e0e0;
+  --card-bg: #1e1e1e;
+  --nav-bg: #1e1e1e;
+}
+
+/* Fade In */
+body {
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  transition: background-color 0.3s, color 0.3s;
+  opacity: 0;
+  transition: opacity 0.8s ease-in-out;
+}
+
+body.fade-in {
+  opacity: 1;
+}
+
+.navbar {
+  background-color: var(--nav-bg) !important;
+}
+
+
+
+/* Misc */
 
 hr {
   border: none;
   height: 2px;
-  background-color: #524e4e; /* Bootstrap bg-light */
-  margin: 1rem 0; /* Adjust margin as needed */
+  background-color: #524e4e;
+  /* Bootstrap bg-light */
+  margin: 1rem 0;
+  /* Adjust margin as needed */
 }
+
 .code-button {
   border: 1px solid #ccc;
   background-color: #f8f9fa;
@@ -14,15 +54,88 @@ hr {
   padding: 6px 10px;
   cursor: pointer;
 }
+
 .code-button:hover {
   background-color: #e9ecef;
 }
 
-/* Make navbar buttons bigger and blue */
-/* Make navbar buttons bigger */
-.navbar .navbar-brand{
-  font-size: 20px; /* Adjust the font size as needed */
+.navbar .navbar-brand {
+  font-size: 20px;
 }
+
 .navbar {
-  font-size: 20px; /* Adjust the font size as needed */
+  font-size: 20px;
+}
+
+.learn-more-button {
+  border: 1px solid #ccc;
+  background-color: #f8f9fa;
+  color: #333;
+  font-family: Consolas, Monaco, 'Andale Mono', 'Ubuntu Mono', monospace;
+  padding: 6px 10px;
+  cursor: pointer;
+}
+.learn-more-button:hover {
+  background-color: #e9ecef;
+}
+
+/* Theme Switcher */
+.theme-switch-wrapper {
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+.theme-switch {
+  height: 0;
+  width: 0;
+  visibility: hidden;
+}
+
+.theme-switch+label {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 60px;
+  height: 30px;
+  background-color: #ccc;
+  border-radius: 30px;
+  position: relative;
+  cursor: pointer;
+  padding: 5px;
+  box-sizing: border-box;
+  transition: background-color 0.3s;
+}
+
+.theme-switch+label .sun,
+.theme-switch+label .moon {
+  font-size: 16px;
+}
+
+.theme-switch+label .toggle-circle {
+  position: absolute;
+  top: 3px;
+  left: 3px;
+  width: 24px;
+  height: 24px;
+  background: #ffffff;
+  border-radius: 50%;
+  transition: transform 0.3s;
+}
+
+.theme-switch:checked+label {
+  background-color: #4f4f4f;
+}
+
+.theme-switch:checked+label .toggle-circle {
+  transform: translateX(30px);
+}
+
+
+.bg-contrast {
+  background-color: var(--bg-contrast-color);
+}
+
+.card{
+  background-color: var(--card-bg);
 }

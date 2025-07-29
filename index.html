@@ -4,6 +4,9 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/icon16.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/icon32.png">
+  <link rel="icon" type="image/png" sizes="48x48" href="/images/icon48.png">
   <title>Lewis McIntyre · Portfolio</title>
   <!-- Bootstrap CSS -->
   <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
@@ -16,6 +19,17 @@
   <!-- Navigation -->
   <nav class="navbar navbar-expand-lg navbar-light bg-light">
     <a class="navbar-brand" href="#">Lewis McIntyre</a>
+
+    <!--Theme Swapper-->
+    <div class="theme-switch-wrapper ml-auto">
+      <input type="checkbox" id="theme-toggle" class="theme-switch" />
+      <label for="theme-toggle">
+        <span class="sun">☀️</span>
+        <span class="moon">🌙</span>
+        <div class="toggle-circle"></div>
+      </label>
+    </div>
+<!--Hidden for now
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
       aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
@@ -26,6 +40,7 @@
         <li class="nav-item active">
           <a class="nav-link" href="index.html">Home</a>
         </li>
+        
         <li class="nav-item">
           <a class="nav-link" href="all-work.html">All Work</a>
         </li>
@@ -37,12 +52,13 @@
         </li>
       </ul>
     </div>
+  -->
   </nav>
 
   <!-- Hero Section -->
   <section id="hero" class="py-5 text-center">
     <div class="container">
-      <h1 class="display-4">Games Programmer</h1>
+      <h1 class="display-4">Games Developer</h1>
       <p class="lead">Motivated by difficult problems</p>
       <div class="embed-responsive embed-responsive-16by9 mx-auto" style="max-width: 560px; max-height: 315;">
         <iframe class="embed-responsive-item" width="560" height="315" src="https://www.youtube.com/embed/m7yrsVd5hRY"
@@ -50,138 +66,343 @@
           allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
           allowfullscreen></iframe>
       </div>
+
+      <div class="showcase-buttons py-2 text-center">
+        <h4 class="text-center">Quick Navigation</h4>
+        <button type="button" style="margin-right:5px;" class="btn btn-outline-primary btn-sm mb-3"
+          onclick="scrollToSection('aboutme')">About Me</button>
+        <button type="button" style="margin-right:5px;" class="btn btn-outline-primary btn-sm mb-3"
+          onclick="scrollToSection('featuredgames')">Featured Games</button>
+        <button type="button" style="margin-right:5px;" class="btn btn-outline-primary btn-sm mb-3"
+          onclick="scrollToSection('programming')">Programming</button>
+        <button type="button" style="margin-right:5px;" class="btn btn-outline-primary btn-sm mb-3"
+          onclick="scrollToSection('design')">Design</button>
+        <button type="button" style="margin-right:5px;" class="btn btn-outline-primary btn-sm mb-3"
+          onclick="scrollToSection('art')">Art</button>
+        <a href="/Lewis McI CV.pdf" target="_blank" rel="noopener" style="margin-right:5px;"
+          class="btn btn-outline-primary btn-sm mb-3">See CV</a>
+      </div>
     </div>
   </section>
-
-  <!-- Highlighted Projects Section -->
-  <section id="highlighted-projects" class="py-5">
+  <!-- About Me Section -->
+  <section id="aboutme" class="py-5 bg-contrast">
     <div class="container">
-      <h2 class="text-center mb-5">Highlighted Projects</h2>
+      <div class="row align-items-center">
+        <div class="col-md-4 text-center mb-4 mb-md-0">
+          <img src="/images/Myself.png" alt="Your Name" class="img-fluid rounded-circle" style="max-width: 250px;">
+        </div>
+        <div class="col-md-8">
+          <h2>About Me</h2>
+          <p><b>Hey,</b> I'm Lewis, a passionate games developer, located in Scotland, with a knack for solving complex
+            challenges. I specialize in Unity projects, Unreal Engine prototypes, and collaborative projects that push
+            creative boundaries. My journey in game development has taught me the values of perseverance, team-work, and
+            continuous learning.</p>
+          <p>When I'm not developing, you'll find me painting, researching the latest technology, or connecting with
+            others. Let's connect and create amazing experiences together.</p>
+          <div class="social-buttons mt-3">
+            <a href="https://github.com/LewisMcI" target="_blank" class="btn btn-outline-dark mr-2">GitHub</a>
+            <a href="https://linkedin.com/in/lewis-mcintyre-136882296/" target="_blank"
+              class="btn btn-outline-primary mr-2">LinkedIn</a>
+            <a href="mailto:lewismcintyre@hotmail.com" target="_blank" class="btn btn-outline-info mr-2">Email</a>
+            <a href="https://www.artstation.com/lewis582" target="_blank" class="btn btn-outline-danger">Artstation</a>
+          </div>
+
+          <div class="text-center mt-4">
+            <button class="btn btn-outline-secondary" data-toggle="collapse" data-target="#aboutDetail"
+              aria-expanded="false" aria-controls="aboutDetail">
+              Learn More
+            </button>
+            <div class="collapse mt-3" id="aboutDetail">
+              <p>
+                Starting with "borrowing" my dad's work computer when I was just six to play
+                Plants vs Zombies, I've been hooked on games ever since. From the PS Vita
+                and Nintendo DS to the PS1 and Xbox 360, I'd always loved how developers
+                tackled their engines technical challenges. Today, I channel this same curiosity into
+                my own engines, protoypes and systems that help my teams push the industry
+                forward.
+              </p>
+              <p>
+                My passion isn't one discipline, it's creating moments where the player is
+                suprised, challenged and immersed in the moment. Whether I'm optimising model
+                streaming in a C++ renderer or iterating level layouts in Unity, it's the
+                problem-solving and collaborative momentum that propels me forward.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- Featured Games Section -->
+  <section id="featuredgames" class="py-5">
+    <div class="container">
+      <h2 class="text-center mb-5">Featured Games</h2>
       <div class="row">
+
         <div class="col-lg-4 mb-4">
           <div class="card">
-            <div style="width: 100%; height: 225px; overflow: hidden;">
-              <img src="images/Freaked Out.jpg" card-img-top" style="width: 100%; height: 100%; object-fit: cover;"
-                alt="Project 1">
+            <div style="width: 100%; height: 150px; overflow: hidden;">
+              <img src="/images/Planetary Delivery Boys.png" style="width: 100%; height: 100%; object-fit: cover;"
+                alt="Planetary Delivery Boys Logo">
+            </div>
+            <div class="card-body">
+              <h5 class="card-title">Planetary Delivery Boys</h5>
+              <p class="card-text">Multiplayer Horror game about delivering packages for a dystopian corporation.</p>
+              <a href="https://store.steampowered.com/app/3314270/Planetary_Delivery_Boys/" target="_blank"
+                class="btn btn-primary">Page Link</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-4 mb-4">
+          <div class="card">
+            <div style="width: 100%; height: 150px; overflow: hidden;">
+              <img src="/images/Freaked Out.jpg" style="width: 100%; height: 100%; object-fit: cover;"
+                alt="Freaked Out Logo">
             </div>
             <div class="card-body">
               <h5 class="card-title">Freaked Out</h5>
-              <p class="card-text">Group project with brief 'Dumb Ways to Die'.</p>
-              <a href="all-work/freaked-out.html" class="btn btn-primary">Read More</a>
+              <p class="card-text">Simulation Puzzle game about a trapped house and a confused resident</p>
+              <a href="https://gcugames.itch.io/freaked-out" target="_blank" class="btn btn-primary">Page Link</a>
             </div>
           </div>
         </div>
+
         <div class="col-lg-4 mb-4">
           <div class="card">
-            <div style="width: 100%; height: 225px; overflow: hidden;">
-              <img src="images/Game Engine.jpg" class="card-img-top"
-                style="width: 100%; height: 100%; object-fit: cover;" alt="Project 2">
+            <div style="width: 100%; height: 150px; overflow: hidden;">
+              <img src="/images/Bubble God.png" style="width: 100%; height: 100%; object-fit: cover;"
+                alt="Bubble God Logo">
             </div>
             <div class="card-body">
-              <h5 class="card-title">C++ Game Engine</h5>
-              <p class="card-text">Game Engine built using C++, OpenGL & ASSIMP.</p>
-              <a href="all-work/game-engine.html" class="btn btn-primary">Read More</a>
+              <h5 class="card-title">Bubble God</h5>
+              <p class="card-text">A silly First Person Narrative game, and the Winner of GCU's Global Game Jam 2025</p>
+              <a href="https://lewismci.itch.io/bubble-god" target="_blank" class="btn btn-primary">Page Link</a>
             </div>
           </div>
         </div>
-        <div class="col-lg-4 mb-4">
-          <div class="card">
-            <div style="width: 100%; height: 225px; overflow: hidden;">
-              <img src="images/Realistic FPS.jpg" class="card-img-top"
-                style="width: 100%; height: 100%; object-fit: cover;" alt="Project 3">
-            </div>
-            <div class="card-body">
-              <h5 class="card-title">Realistic FPS</h5>
-              <p class="card-text">Unreal Engine prototype mimicing Unrecord's new ADS system.</p>
-              <a href="all-work/realistic-fps.html" class="btn btn-primary">Read More</a>
-            </div>
-          </div>
-        </div>
+
       </div>
     </div>
   </section>
-  </section>
+<!-- Programming Section -->
+<section id="programming" class="py-5 bg-contrast">
+  <div class="container">
+    <h2 class="text-center mb-5">Programming</h2>
+    <div class="d-flex flex-row flex-nowrap overflow-auto">
+      
+      <div class="card mr-4" style="min-width: 300px;">
+        <div style="width: 100%; height: 150px; overflow: hidden;">
+          <img src="/images/Freaked-Out/Line-of-Sight.gif" 
+               style="width: 100%; height: 100%; object-fit: cover;" 
+               alt="Procedural Line of Sight GIF">
+        </div>
+        <div class="card-body">
+          <h5 class="card-title">Procedural Line of Sight</h5>
+          <p class="card-text">
+            A custom Line of Sight tool that creates a simple mesh using just inspector parameters.
+          </p>
+          <a href="https://github.com/LewisMcI/Freaked-Out/blob/main/Unity%20Game%20Folder/Assets/Scripts/Robot/AI%20Scripts/LineOfSight.cs" 
+             target="_blank" 
+             class="btn btn-primary btn-sm">
+            View Code
+          </a>
+        </div>
+      </div>
 
-  <!-- All Work Section -->
-  <section id="all-work" class="py-5">
-    <div class="container">
-      <h2 class="text-center mb-5">Recent Work</h2>
-      <!-- Grid or list of recent work -->
-      <div class="row">
-        <div class="col-lg-4 mb-4">
-          <div class="card">
-            <div style="width: 100%; height: 225px; overflow: hidden;">
-              <img src="images/Portal/VFX.png" class="card-img-top"
-                style="width: 100%; height: 100%; object-fit: cover;" alt="Recent Work 3">
-            </div>
-            <div class="card-body">
-              <h5 class="card-title">Portal</h5>
-              <p class="card-text">Portal mechanic made with C++ in Unreal Engine 5.</p>
-              <a href="all-work/portal.html" class="btn btn-primary">Read More</a>
-            </div>
-          </div>
+
+      <div class="card mr-4" style="min-width: 300px;">
+        <div style="width: 100%; height: 150px; overflow: hidden;">
+          <img src="/images/Game-Engine/Firing.gif" 
+               style="width: 100%; height: 100%; object-fit: cover;" 
+               alt="Firing in C++ GIF">
         </div>
-        <div class="col-lg-4 mb-4">
-          <div class="card">
-            <div style="width: 100%; height: 225px; overflow: hidden;">
-              <img src="images/Blogs/Reveal/Blockout.jpg" class="card-img-top"
-                style="width: 100%; height: 100%; object-fit: cover;" alt="Recent Work 3">
-            </div>
-            <div class="card-body">
-              <h5 class="card-title">Reveal Prototype</h5>
-              <p class="card-text">Previous work updated with new render pipeline.</p>
-              <a href="all-work/Reveal.html" class="btn btn-primary">Read More</a>
-            </div>
-          </div>
+        <div class="card-body">
+          <h5 class="card-title">3D Asteroids</h5>
+          <p class="card-text">
+            An engine fully made in OpenGL with double buffered rendering & quaternion transforms
+          </p>
+          <a href="https://github.com/LewisMcI/Games-Programming-3" 
+             target="_blank" 
+             class="btn btn-primary btn-sm">
+            View Code
+          </a>
         </div>
-        <div class="col-lg-4 mb-4">
-          <div class="card">
-            <div style="width: 100%; height: 225px; overflow: hidden;">
-              <img src="images/2D Networked Shooter.png" class="card-img-top"
-                style="width: 100%; height: 100%; object-fit: cover;" alt="Recent Work 1">
-            </div>
-            <div class="card-body">
-              <h5 class="card-title">Shoots</h5>
-              <p class="card-text">Fully networked 2D shooter with support of up to 4 players.</p>
-              <a href="all-work/shoots.html" class="btn btn-primary">Read More</a>
-            </div>
-          </div>
+      </div>
+
+      <div class="card mr-4" style="min-width: 300px;">
+        <div style="width: 100%; height: 150px; overflow: hidden;">
+          <img src="/images/Portal/VFX.png" 
+               style="width: 100%; height: 100%; object-fit: cover;" 
+               alt="Portal VFX & Implementation Image">
+        </div>
+        <div class="card-body">
+          <h5 class="card-title">C++ Portals</h5>
+          <p class="card-text">
+            Real-time, interactable, physics-driven portal system, written in C++ with Unreal Engine.
+          </p>
+          <a href="https://github.com/LewisMcI/Portals-Puzzle" 
+             target="_blank" 
+             class="btn btn-primary btn-sm">
+            View Code
+          </a>
         </div>
       </div>
     </div>
-    <div class="text-center mt-4">
-      <a href="all-work.html" class="btn btn-secondary">See All Work</a>
-    </div>
-    </div>
-  </section>
+  </div>
+</section>
 
-  <!-- About Section -->
-  <section id="contact" class="py-5 text-center">
-    <div class="container">
-      <h2 class="mb-4">About Me</h2>
-      <p class="text-center">Hi! I'm Lewis, a Games Developer with skills in Software Development and Games Design. I've
-        just graduated from my study within Computer Games for Software Development at Glasgow Caledonian University
-        with a first class degree. Throughout my time within the games industry I have gained experience in the
-        languages
-        Java, C# and C++. I'm proficient in Unity, with experience in Unreal Engine and game development toolkits like
-        S&box. My passion is all things games, and my favourite achievement
-        is both the creation of my own <a href="/all-work/game-engine.html">C++ Game Engine</a> and a game created with some extremely talented people called
-        '<a href="/all-work/freaked-out.html">Freaked Out</a>', both of which can be read about on this page.
-        Thanks for checking out my portfolio!
-      </p>
-      <p class="lead">Reach out to me:</p>
-      <ul class="list-unstyled text-center mb-4">
-        <li>Email: <a href="mailto:lewismcintyre@hotmail.com">lewismcintyre@hotmail.com</a></li>
-        <li>LinkedIn: <a href="https://www.linkedin.com/in/lewis-mcintyre-136882296/">My LinkedIn Profile</a></li>
-        <li>ArtStation: <a href="https://www.artstation.com/lewis582">My ArtStation Profile</a></li>
-      </ul>
-    </div>
-  </section>
+<!-- Design Section -->
+ <section id="design" class="py-5">
+  <div class="container">
+    <h2 class="text-center mb-5">Design</h2>
+    <div class="d-flex flex-row flex-nowrap overflow-auto">
+      
+      <div class="card mr-4" style="min-width: 300px;">
+        <div style="width: 100%; height: 150px; overflow: hidden;">
+          <img src="/images/Portals Moving.webp" 
+               style="width: 100%; height: 100%; object-fit: cover;" 
+               alt="Moving through a Portal GIF">
+        </div>
+        <div class="card-body">
+          <h5 class="card-title">Level Design for Limitations</h5>
+          <p class="card-text">
+            The real-time effect of portals can be performant heavy. The level design
+            was modified to allow efficient deloading and loading.
+          </p>
+          <a href="https://lewismci.itch.io/portals-puzzle" 
+             target="_blank" 
+             class="btn btn-primary btn-sm">
+            View Game
+          </a>
+        </div>
+      </div>
 
+
+      <div class="card mr-4" style="min-width: 300px;">
+        <div style="width: 100%; height: 150px; overflow: hidden;">
+          <img src="/images/Level Design Intro.webp" 
+               style="width: 100%; height: 100%; object-fit: cover;" 
+               alt="Memoramble Introduction GIF">
+        </div>
+        <div class="card-body">
+          <h5 class="card-title">Memorable Design</h5>
+          <p class="card-text">
+            The first level of Planetary Delivery Boys is designed to create an 
+            unforgettable Sci-Fi dystopian atmosphere.
+          </p>
+          <a href="https://store.steampowered.com/app/3314270/Planetary_Delivery_Boys/" 
+             target="_blank" 
+             class="btn btn-primary btn-sm">
+            View Game
+          </a>
+        </div>
+      </div>
+
+      <div class="card mr-4" style="min-width: 300px;">
+        <div style="width: 100%; height: 150px; overflow: hidden;">
+          <img src="/images/Luminous Teamwork.webp" 
+               style="width: 100%; height: 100%; object-fit: cover;" 
+               alt="Luminous promoting teamwork Gif">
+        </div>
+        <div class="card-body">
+          <h5 class="card-title">Promoting Teamwork</h5>
+          <p class="card-text">
+            Player Collaboration is tricky, early build centered around a simple
+            premise of combining player colours to advance.
+          </p>
+          <a href="https://github.com/LewisMcI/Luminous" 
+             target="_blank" 
+             class="btn btn-primary btn-sm">
+            View Game
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Art Section -->
+ <section id="art" class="py-5 bg-contrast">
+  <div class="container">
+    <h2 class="text-center mb-5">Art</h2>
+    <div class="d-flex flex-row flex-nowrap overflow-auto">
+      
+      <div class="card mr-4" style="min-width: 300px;">
+        <div style="width: 100%; height: 150px; overflow: hidden;">
+          <img src="/images/Freaked-Out/Nuke-VFX.gif" 
+               style="width: 100%; height: 100%; object-fit: cover;" 
+               alt="VFX of a Nuke GIF">
+        </div>
+        <div class="card-body">
+          <h5 class="card-title">Nuke VFX</h5>
+          <p class="card-text">
+            Nuke VFX made with Unity's Visual Effect graph for the game
+            'Freaked Out'.
+          </p>
+          <a href="https://gcugames.itch.io/freaked-out" 
+             target="_blank" 
+             class="btn btn-primary btn-sm">
+            View Game
+          </a>
+        </div>
+      </div>
+
+
+      <div class="card mr-4" style="min-width: 300px;">
+        <div style="width: 100%; height: 150px; overflow: hidden;">
+          <img src="/images/Modelling.webp" 
+               style="width: 100%; height: 100%; object-fit: cover;" 
+               alt="Firing in C++ GIF">
+        </div>
+        <div class="card-body">
+          <h5 class="card-title">Fuse Box</h5>
+          <p class="card-text">
+            Prop modelling for the Fuse Task of Planetary Delivery Boys. The fuse must be 
+            replaced, and a small minigame using the levers, buttons, wheels and releases 
+            is played.
+          </p>
+          <a href="https://caledonianac-my.sharepoint.com/:f:/g/personal/lmcint218_caledonian_ac_uk/Egkvl9l0HjhCi9PEHWv9QlMBce1RrJQtZUPFTrc0N2OAMg?e=itnJh7" 
+             target="_blank" 
+             class="btn btn-primary btn-sm">
+            View Files
+          </a>
+        </div>
+      </div>
+
+      <div class="card mr-4" style="min-width: 300px;">
+        <div style="width: 100%; height: 150px; overflow: hidden;">
+          <img src="/images/slam.webp" 
+               style="width: 100%; height: 100%; object-fit: cover;" 
+               alt="Portal VFX & Implementation Image">
+        </div>
+        <div class="card-body">
+          <h5 class="card-title">Door Slam</h5>
+          <p class="card-text">
+            Small player animation for slamming your head into a door. 
+            This was my first introduction to the 12 Principles of Animation.
+          </p>
+          <a href="https://store.steampowered.com/app/3314270/Planetary_Delivery_Boys/"
+             target="_blank" 
+             class="btn btn-primary btn-sm">
+            View Game
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- Hidden for now
+  <div class="text-center mt-4">
+    <a href="all-work.html" class="btn btn-secondary">See All Work</a>
+  </div>
+  -->
   <!-- Footer -->
-  <footer class="bg-dark text-white text-center py-3">
+  <footer class=" text-center py-3">
     <div class="container">
-      <p>&copy; 2024 Lewis McIntyre · Portfolio. All rights reserved.</p>
+      <p>&copy; 2025 Lewis McIntyre · Portfolio. All rights reserved.</p>
     </div>
   </footer>
 
@@ -189,6 +410,7 @@
   <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js"></script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <script src="scripts.js"></script>
 
 </body>
 
