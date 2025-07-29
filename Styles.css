@@ -2,6 +2,7 @@
 :root {
   --bg-color: #ffffff;
   --bg-contrast-color: #f8f9fa;
+  --bg-bigcontrast-color: #8a949e;
   --text-color: #333333;
   --card-bg: #f8f9fa;
   --nav-bg: #f8f9fa;
@@ -11,6 +12,7 @@
 .dark-mode {
   --bg-color: #121212;
   --bg-contrast-color: #181818;
+  --bg-bigcontrast-color: #676768;
   --text-color: #e0e0e0;
   --card-bg: #1e1e1e;
   --nav-bg: #1e1e1e;
@@ -23,6 +25,7 @@ body {
   transition: background-color 0.3s, color 0.3s;
   opacity: 0;
   transition: opacity 0.8s ease-in-out;
+  
 }
 
 body.fade-in {
@@ -138,4 +141,26 @@ hr {
 
 .card{
   background-color: var(--card-bg);
+}
+
+/* Back To Top Button */
+#backToTop {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  padding: 0.5em 0.8em;
+  font-size: 1rem;
+  border: none;
+  border-radius: 4px;
+  background: var(--bg-bigcontrast-color);
+  color: white;
+  cursor: pointer;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.3s;
+  z-index: 1000;
+}
+#backToTop.visible {
+  opacity: 1;
+  pointer-events: auto;
 }

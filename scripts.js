@@ -23,10 +23,10 @@ function scrollToSection(sectionId) {
     if (section) {
         section.scrollIntoView({ behavior: "smooth", block: "start" });
     }
-}
+};
 
 // Back to Top Button
-; (function () {
+(function () {
     const btn = document.getElementById('backToTop');
     const SHOW_AFTER = 200; // px scrolled down before showing
 
