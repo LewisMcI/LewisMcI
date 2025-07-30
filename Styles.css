@@ -17,7 +17,6 @@
   --card-bg: #1e1e1e;
   --nav-bg: #1e1e1e;
 }
-
 /* Fade In */
 body {
   background-color: var(--bg-color);
@@ -163,4 +162,29 @@ hr {
 #backToTop.visible {
   opacity: 1;
   pointer-events: auto;
+}
+
+.card-container {
+  /* allow z‑index layering */
+  position: relative;
+}
+
+
+/* Dimming cards if device supports hover */
+@media (hover: hover) and (pointer: fine) {
+.card {
+  transition: transform .1s ease, opacity .3s ease;
+  z-index: 0;
+}
+
+.card {
+  opacity: 0.6;
+  transform: scale(.95);
+}
+
+.card:hover {
+  opacity: 1;
+  transform: scale(1.0);
+  z-index: 1;
+}
 }
